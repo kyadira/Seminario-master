@@ -15,5 +15,11 @@
     <string name="favourite_author_info">AUTHOR INFO</string>
     <string name="quotation">Random quotations</string>
     <string name="quotation_welcome">Hello %1s!\n Press refresh to get a new quotation!</string>
-
+    <string name="dialog_title">Deleting quote</string>
+    <string name="dialog_message">Are you sure?</string>
+    <string name="dialog_message_clear">Are you sure you want to delete all?</string>
+    <string-array name="idiomas">
+        <item>English</item>
+        <item>Russian</item>
+    </string-array>
 </resources>
