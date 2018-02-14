@@ -8,9 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="SettingTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="textAppearance">?android:attr/textAppearanceLarge</item>
         <item name="colorPrimary">@color/colorPrimaryDark</item>
-        <item name="android:textSize">@dimen/settings_text_dimen</item>
     </style>
 
 </resources>
