@@ -1,5 +1,7 @@
 package com.example.jacosro.seminario;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -15,9 +17,13 @@ public class QuotationActivity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quotation);
+
         author = findViewById(R.id.textView_author);
         quote = findViewById(R.id.textView_quote);
 
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String name = preferences.getString("name", "unknown");
+        quote.setText(getString(R.string.quotation_welcome).replace("%1s", name));
     }
 
     @Override
